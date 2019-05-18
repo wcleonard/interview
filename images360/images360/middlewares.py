@@ -79,3 +79,15 @@ class ProxyMiddleware():
         return cls(
             proxy_url=settings.get('PROXY_URL')
         )
+
+import random
+
+class RandomUserAgentMiddleware():
+    def __init__(self):
+        self.user_agents = [
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+            'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/3.1)',
+            'Mozilla/5.0 (iPod; U; CPU iPhone OS 4_0 like Mac OS X; gd-GB) AppleWebKit/535.25.4 (KHTML, like Gecko) Version/4.0.5 Mobile/8B114 Safari/6535.25.4',
+        ]
+    def process_request(self, request, spider):
+        request.headers['User-Agent'] = random.choice(self.user_agents)

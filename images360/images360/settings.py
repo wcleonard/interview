@@ -22,7 +22,8 @@ MYSQL_HOST = 'localhost'
 MYSQL_DATABASE = 'images360'
 MYSQL_PORT = 3306
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = '147258'
+MYSQL_PASSWORD = ''
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
 
@@ -56,7 +57,8 @@ MYSQL_PASSWORD = '147258'
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'images360.middlewares.Images360DownloaderMiddleware': 543,
-   'images360.middlewares.ProxyMiddleware': 545
+   'images360.middlewares.ProxyMiddleware': 545,
+   'images360.middlewares.RandomUserAgentMiddleware': 546,
 }
 
 # Enable or disable extensions
