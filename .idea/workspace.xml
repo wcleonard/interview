@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="546645ec-0fe4-40a8-9436-406a5f3cb405" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images360/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/images360/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images360/images360/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/images360/images360/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images360/images360/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/images360/images360/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookShop/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/BookShop/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +24,7 @@
         <option value="$PROJECT_DIR$/images360/images360/middlewares.py" />
         <option value="$PROJECT_DIR$/images360/images360/settings.py" />
         <option value="$PROJECT_DIR$/images360/README.md" />
+        <option value="$PROJECT_DIR$/BookShop/README.md" />
       </list>
     </option>
   </component>
@@ -39,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="28" />
     <option name="width" value="950" />
     <option name="height" value="1001" />
@@ -60,20 +59,13 @@
             <path>
               <item name="interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="images360" type="462c0819:PsiDirectoryNode" />
+              <item name="BookShop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="images360" type="462c0819:PsiDirectoryNode" />
-              <item name="images360" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="images360" type="462c0819:PsiDirectoryNode" />
-              <item name="images360" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="BookShop" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -82,6 +74,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -139,18 +132,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558203190948</updated>
-      <workItem from="1558203192100" duration="3313000" />
+      <workItem from="1558203192100" duration="4895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3313000" />
+    <option name="totallyTimeSpent" value="4895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1001" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11843515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2642015" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -235,6 +228,83 @@
           <folding>
             <element signature="e#24#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/api/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/BookShop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="121" column="2" lean-forward="true" selection-start-line="121" selection-end-line="126" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#64#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/shop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="81" column="3" selection-start-line="81" selection-end-line="90" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="10" selection-start-line="8" selection-end-line="33" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-end-line="82" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-end-line="64" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookShop/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3543">
+            <caret line="195" column="33" lean-forward="true" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
