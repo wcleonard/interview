@@ -1,0 +1,19 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div style="width: 350px; height: 300px">
+    <h1>帐号登录</h1>
+    <form action="." method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p>
+        <input type="submit" value="LOGIN">
+    </p>
+    </form>
+</div>
+<div>
+    <a href="">忘记密码?</a>|<a href="{% url 'shop:register' %}">立即注册</a>
+</div>
+{% endblock %}
