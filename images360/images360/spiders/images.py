@@ -4,6 +4,7 @@ from urllib.parse import urlencode
 from scrapy import Spider, Request
 import scrapy
 from ..items import Images360Item
+import re
 
 
 class ImagesSpider(scrapy.Spider):
@@ -13,7 +14,8 @@ class ImagesSpider(scrapy.Spider):
 
     def parse(self, response):
         result = json.loads(response.text)
-        for image in result.get(list):
+        print(result)
+        for image in result.get('list'):
             item = Images360Item()
             item['id'] = image.get('imageid')
             item['url'] = image.get('qhimg_url')
@@ -22,10 +24,22 @@ class ImagesSpider(scrapy.Spider):
             yield item
 
     def start_requests(self):
-        data = {'ch': 'photography', 'listtype':'new'}
+        data = {'ch': 'photography', 'listtype': 'new'}
         base_url = 'https://image.so.com/zj?'
-        for page in range(1, self.settings.get('MAX_PAGE')+1):
+        for page in range(1, self.settings.get('MAX_PAGE') + 1):
             data['sn'] = page * 30
             params = urlencode(data)
             url = base_url + params
             yield Request(url, self.parse)
+
+    def parse_url(self, url):
+        patterns = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+        if re.match(patterns, url):
+            return url
+
+    def parse_title(self, title):
+        if re.findall('/', title):
+            title = title.replace('', '/')
+        if re.findall(':', title):
+            title = title.replace('', ':')
+        return title

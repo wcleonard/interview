@@ -54,9 +54,10 @@ MYSQL_PASSWORD = '147258'
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'images360.middlewares.Images360DownloaderMiddleware': 543,
-# }
+DOWNLOADER_MIDDLEWARES = {
+   'images360.middlewares.Images360DownloaderMiddleware': 543,
+   'images360.middlewares.ProxyMiddleware': 545
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
