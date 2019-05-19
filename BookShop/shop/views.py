@@ -6,6 +6,7 @@ from django.shortcuts import render, HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm
 
+
 # login view
 def user_login(request):
     if request.method == "POST":
@@ -26,6 +27,7 @@ def user_login(request):
 
     return render(request, 'shop/account/login.html', {'form': form})
 
+
 # register view
 def user_register(request):
     if request.method == "POST":
@@ -33,7 +35,6 @@ def user_register(request):
         if user_form.is_valid():
             # 建立新数据对象但是不写入数据库
             new_user = user_form.save(commit=False)
-            # 设置密码
             new_user.set_password(user_form.cleaned_data['password'])
             # 保存User对象
             new_user.save()
@@ -41,6 +42,7 @@ def user_register(request):
     else:
         user_form = UserRegistrationForm()
     return render(request, 'shop/account/register.html', {'user_form': user_form})
+
 
 # message edit
 @login_required
@@ -56,6 +58,7 @@ def message_edit(request):
         profile_form = ProfileEditForm(instance=request.user.profile)
 
     return render(request, 'shop/account/edit.html', {'user_form': user_form, 'profile_form': profile_form})
+
 
 # logout view
 @login_required
@@ -77,6 +80,7 @@ def product_list(request, category_slug=None):
                   {'category': category,
                    'categories': categories,
                    'products': products})
+
 
 # 商品详情页
 def product_detail(request, id, slug):

@@ -118,6 +118,7 @@ LOGOUT_URL = 'logout'
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
 
+
 # 让用户可以增删改查数据对象，同时让未登录用户只能进行只读操作
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
