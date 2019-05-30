@@ -5,4 +5,4 @@
 
 （2）基于Django的个人博客项目 MyBlog
 
-（3）基于Scrapy的360图片爬虫项目 images360
+（3）基于Scrapy的摄影图片爬虫项目 images360
