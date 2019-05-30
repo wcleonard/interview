@@ -3,6 +3,6 @@
 
 （1）基于Django的旧时光书店项目 BookShop
 
-（2）基于Django的个人博客项目 MyBlog
+（2）基于Django的个人博客项目 jbt_blog
 
 （3）基于Scrapy的摄影图片爬虫项目 images360
